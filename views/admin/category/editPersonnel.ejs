@@ -1,0 +1,106 @@
+<%- include('../layouts/header.ejs') %>
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Thêm nhân viên</strong>
+                        </div>
+                        <div class="card-body card-block">
+                            <form action="/admin/category/addPersonnel" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="name" class="form-control-label">Tên nhân viên</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="HoTen" name="HoTen" placeholder="Tên nhân viên" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="price" class="form-control-label">Email</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="email" id="Email" name="Email" placeholder="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="price" class="form-control-label">Mật khẩu</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="password" id="MatKhau" name="MatKhau" placeholder="Mật khẩu" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="price" class="form-control-label">SDT</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="SDT" name="SDT" placeholder="sdt" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="select" class=" form-control-label">Chức vụ</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="ChucVu" id="ChucVu" class="form-control">
+                                            <option value="Nhân viên">Nhân viên </option>
+                                            <option value="Quản lí">Quản lí</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="image" class="form-control-label">Hình ảnh</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="file" id="Anh" name="Anh" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="dess" class="form-control-label">Lý lịch</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <textarea name="LyLich" id="LyLich" rows="9" placeholder="Lý lịch" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="select" class=" form-control-label">Trạng thái</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="Admin" id="Admin" class="form-control">
+                                            <option value="0">Admin</option>
+                                            <option value="1">user</option>
+                                           
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-dot-circle-o"></i> Submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../layouts/footer.ejs') %>
